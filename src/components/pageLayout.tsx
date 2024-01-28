@@ -6,7 +6,7 @@ export default function PageLayout({ children, }: { children: React.ReactNode })
         <div className="container px-10 pt-8 mb-10">
           {children}
         </div>
-        <Navbar />
+        {/* <Navbar /> */}
       </>
     )
   }

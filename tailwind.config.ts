@@ -24,6 +24,7 @@ const config: Config = {
         'dark-purple': '#330259',
         'white-purple': '#D5DBFC',
         'accent-green': '#01F7B6',
+        'background': '#0D0116',
       },
       backgroundColor: {
         'bg-white': '#ffffff',
@@ -31,6 +32,7 @@ const config: Config = {
         'bg-dark-purple': '#330259',
         'bg-white-purple': '#D5DBFC',
         'bg-accent-green': '#01F7B6',
+        'bg-background': '#0D0116',
       },
     },
   },

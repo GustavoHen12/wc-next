@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import { Poppins, Raleway } from 'next/font/google'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const poppins = Poppins({ weight: ["600"], subsets: ['latin'], variable: '--font-poppins', display: 'swap' })
 const raleway = Raleway({ weight: ["800"], subsets: ['latin'], variable: '--font-raleway', display: 'swap' })
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${raleway.variable} font-sans`}>
-        <main className="min-h-screen flex flex-col p-0 m-0 mb-10">
+        <main className="min-h-screen flex flex-col p-0 m-0">
           {children}
         </main>
       </body>
