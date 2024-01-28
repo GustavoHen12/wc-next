@@ -33,6 +33,7 @@ const config: Config = {
         'bg-white-purple': '#D5DBFC',
         'bg-accent-green': '#01F7B6',
         'bg-background': '#0D0116',
+        'bg-button-bkg': '#B1B1B1',
       },
     },
   },
