@@ -35,7 +35,7 @@ export default function HomePage() {
 
                 <div className='absolute top-0 left-0 w-full'>
                     <div className='relative'>
-                        <Parallax speed={-15}>
+                        <Parallax speed={-20}>
                             <div className="w-full min-h-screen">
                                 <img src='fundo.png' alt="fundo" className='w-full min-h-screen object-fill object-center'/>
                             </div>
