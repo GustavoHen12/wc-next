@@ -13,7 +13,7 @@ export default function HomePage() {
     const [eventos, setEventos] = useState([]);
 
     // Random between 1, 2, 3
-    const random_index = Math.floor(Math.random() * 3) + 1;
+    // const random_index = Math.floor(Math.random() * 3) + 1;
 
 
     useEffect(() => {
@@ -41,7 +41,7 @@ export default function HomePage() {
                     <div className='relative'>
                         <Parallax speed={-20}>
                             <div className="w-full min-h-screen">
-                                <img src={`fundo${random_index}.jpeg`} alt="fundo" className='w-full min-h-screen object-cover object-center'/>
+                                <img src={`fundo${Math.floor(Math.random() * 3) + 1}.jpeg`} alt="fundo" className='w-full min-h-screen object-cover object-center'/>
                             </div>
                             <div className='absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#0D0116]'></div>
                             <div className='absolute z-10 bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[#0D0116]'></div>
