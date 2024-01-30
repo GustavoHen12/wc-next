@@ -11,7 +11,11 @@ export default function HomePage() {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     const [openEventos, setOpenEventos] = useState(false);
     const [eventos, setEventos] = useState([]);
-    
+
+    // Random between 1, 2, 3
+    const random_index = Math.floor(Math.random() * 3) + 1;
+
+
     useEffect(() => {
         // async function getEventos() {
         //     const res = await fetch(apiUrl + '/eventos')
@@ -37,7 +41,7 @@ export default function HomePage() {
                     <div className='relative'>
                         <Parallax speed={-20}>
                             <div className="w-full min-h-screen">
-                                <img src='fundo.png' alt="fundo" className='w-full min-h-screen object-fill object-center'/>
+                                <img src={`fundo${random_index}.jpeg`} alt="fundo" className='w-full min-h-screen object-cover object-center'/>
                             </div>
                             <div className='absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#0D0116]'></div>
                             <div className='absolute z-10 bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-[#0D0116]'></div>
