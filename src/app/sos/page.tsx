@@ -113,7 +113,7 @@ export default function SosPage() {
         }
       </div>
       <div className="mt-8">
-        <p className='mb-4'>Oi, nós queremos conversar com você, preencha as informações abaixo que nós entraremos em contato com você:</p>
+        <p className='mb-4'>Oi, nós queremos conversar com você, se você quiser conversar com a gente preencha as informações abaixo que nós entraremos em contato:</p>
         <form className={`font-sans`} action={sendSos}>
             <div className="mb-4">
               <div>
@@ -125,7 +125,6 @@ export default function SosPage() {
                   value={nome}
                   onChange={handleNomeChange} 
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                  required
                 />
               </div>
             </div>
@@ -140,7 +139,6 @@ export default function SosPage() {
                   onChange={handleTelefoneChange}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   placeholder="(41) 90000-0000"
-                  required
                 />
               </div>
             </div>
